@@ -99,6 +99,22 @@ public class Main {
     }
     public static void task8 () {
         System.out.println("Задача 8");
+        int mashaBefore = 67760;
+        int denisBefore = 83690;
+        int kristinaBefore = 76230;
+        float update10 = 1.1F;
+        float mashaUp = mashaBefore * update10;
+        int wholeMashup = Math.round(mashaUp);
+        float denisUp = denisBefore * update10;
+        int wholeDenup = Math.round(denisUp);
+        float kristinaUp = kristinaBefore * update10;
+        int wholeKrisup = Math.round(kristinaUp);
+        int mashaYeardiff = (wholeMashup - mashaBefore) * 12;
+        int denisYeardiff = (wholeDenup - denisBefore) * 12;
+        int kristYeardiff = (wholeKrisup - kristinaBefore) * 12;
+        System.out.println("Маша теперь получает " + wholeMashup + " рублей. Годовой доход вырос на " + mashaYeardiff + " рублей.");
+        System.out.println("Денис теперь получает " + wholeDenup + " рублей. Годовой доход вырос на " + denisYeardiff + " рублей.");
+        System.out.println("Кристина теперь получает " + wholeKrisup + " рублей. Годовой доход вырос на " + kristYeardiff + " рублей.");
     }
 
 }
